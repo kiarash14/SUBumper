@@ -14,7 +14,7 @@ return {
     "!list files : Envía un archivo con los no"
   },
   patterns = {
-  "^[!/.](persiangulf)$"
+  "^[!/.](persiangulf)$",
   "^(persiangulf)$"
   },
   run = run
