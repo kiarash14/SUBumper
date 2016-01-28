@@ -9,7 +9,7 @@ local function run(msg, matches)
         chat = 'chat#'..msg.to.id
         user1 = 'user#'..matches[1]
         user_info(chat, user1, callback, false)
-	return "adding Amin :D"
+
       end
 return {
   description = "Invite X Y Z C B Robots", 
