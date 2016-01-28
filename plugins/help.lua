@@ -4,7 +4,7 @@ local function run(msg, matches)
         return about
     end
     if matches[1] == 'help' then
-  local aboout = 'helpfa_text = ⚓️ !helpfa\n🎈برای مشاهده لیست راهنما به زبان فارسی 🎈\n\n⚓️ !helpen\n🎈To view a list of help in English🎈\n\n⚓️ !helpar\n🎈لعرض قوائم من مساعدة في العربية🎈'
+  local aboout = '⚓️ !helpfa\n🎈برای مشاهده لیست راهنما به زبان فارسی 🎈\n\n⚓️ !helpen\n🎈To view a list of help in English🎈\n\n⚓️ !helpar\n🎈لعرض قوائم من مساعدة في العربية🎈'
         return aboout
     end
   if matches[1] == 'helpen' then
