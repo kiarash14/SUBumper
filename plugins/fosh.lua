@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-	return "کیر بات سیاره و خلیج فارس تو کس ننه جندت .. matches[1]
+	return "کیر بات سیاره و خلیج فارس تو کس ننه جندت ".. matches[1]
 end
 end
 return {
