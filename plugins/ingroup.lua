@@ -831,12 +831,16 @@ end
 
 
 local function helpen()
+	if msg.text == 'helpen' then
   local help_text = tostring(_config.help_text)
   return help_text
 end
+end
 local function helpfa()
+		if msg.text == 'helpfa' then
   local helpfa_text = tostring(_config.help_text)
   return helpfa_text
+end
 end
 
 
