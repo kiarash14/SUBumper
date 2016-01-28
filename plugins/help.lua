@@ -9,6 +9,6 @@ local function run(msg)
     end
     end
 return {patterns = {
-   "^[!/.]helpfa",
-   "^[!/.]helpen",
+   "^[!/.](helpfa)",
+   "^[!/.](helpen)",
     }, run = run}
