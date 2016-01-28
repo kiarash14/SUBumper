@@ -120,12 +120,12 @@ end
 
 return {
 patterns = {
-"^[!/.]id$",
-"^[!/.]id (chat) (.)$",
-"^[!/.]id (.)$",
-"^id$",
-"^id (chat) (.)$",
-"^id (.)$"
+"^[!/.]info$",
+"^[!/.]info (chat) (.)$",
+"^[!/.]info (.)$",
+"^info$",
+"^info (chat) (.)$",
+"^info (.)$"
 },
 run = run
 }
