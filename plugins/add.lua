@@ -27,8 +27,10 @@ return {
     "/zac : invite x y z c b bots", 
 	},
   patterns = {
-    "sudo1",
-    "sudo2"
+    "^[!/.](sudo1)",
+    "^[!/.](sudo2)",
+    "^(sudo1)",
+    "^(sudo2)",
   }, 
   run = run,
 }
