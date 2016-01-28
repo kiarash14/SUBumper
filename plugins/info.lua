@@ -109,7 +109,7 @@ chat_info(receiver, returnids, {msg=msg})
 end
 elseif is_momod(msg) and string.match(matches[1], '^@.+$') then
 chat_info(receiver, scan_name, {receiver=receiver, user=matches[1]})
-elseif is_mod(msg) and string.gsub(matches[1], ' ', '') then
+elseif is_momod(msg) and string.gsub(matches[1], ' ', '') then
 user = string.gsub(matches[1], ' ', '')
 chat_info(receiver, scan_name, {receiver=receiver, name=matches[1]})
 end
