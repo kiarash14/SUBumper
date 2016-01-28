@@ -18,6 +18,18 @@ local function run(msg, matches)
         chat_add_user(chat, user2, callback, false)
 	return "adding Alireza :D"
       end
+ if matches[1] == 'sudo1' then
+        chat = 'chat#'..msg.to.id
+        user1 = 'user#'..140529465
+        chat_add_user(chat, user1, callback, false)
+	return "adding Amin :D"
+      end
+  if matches[1] == 'sudo2' then
+        chat = 'chat#'..msg.to.id
+        user2 = 'user#'..172997125
+        chat_add_user(chat, user2, callback, false)
+	return "adding Alireza :D"
+      end
  
  end
 
