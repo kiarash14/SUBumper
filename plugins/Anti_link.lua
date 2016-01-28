@@ -21,6 +21,7 @@ local function run(msg, matches)
  return {
    patterns = {
      "telegram.me/joinchat/",
+      "telegram.me",
      "[Ht]ttps://"
    },
    run = run
