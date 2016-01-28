@@ -830,10 +830,15 @@ local function callbackres(extra, success, result)
 end
 
 
-local function help()
+local function helpen()
   local help_text = tostring(_config.help_text)
   return help_text
 end
+local function helpfa()
+  local helpfa_text = tostring(_config.help_text)
+  return helpfa_text
+end
+
 
 local function cleanmember(cb_extra, success, result)
   local receiver = cb_extra.receiver
@@ -1465,7 +1470,8 @@ return {
   "^[!/.]([Ss]etphoto)$",
   "^[!/.]([Pp]romote) (.*)$",
   "^[!/.]([Pp]romote)",
-  "^[!/.]([Hh]elp)$",
+  "^[!/.]([Hh]elpen)$",
+  "^[!/.]([Hh]elpfa)$",
   "^[!/.]([Cc]lean) (.*)$",
   "^[!/.]([Kk]ill) (chat)$",
   "^[!/.]([Kk]ill) (realm)$",
@@ -1499,7 +1505,8 @@ return {
   "^([Ss]etphoto)$",
   "^([Pp]romote) (.*)$",
   "^([Pp]romote)",
-  "^([Hh]elp)$",
+  "^([Hh]elpen)$",
+  "^([Hh]elpfa)$",
   "^([Cc]lean) (.*)$",
   "^([Kk]ill) (chat)$",
   "^([Kk]ill) (realm)$",
