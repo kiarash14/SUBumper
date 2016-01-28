@@ -42,14 +42,14 @@ send_msg(extra.receiver, text, ok_cb, false)
 end
 end
 
-local function action_by_reply(extra, success, result)
-local text = 'name: '..(result.from.first_name or '')..' '..(result.from.last_name or '')..'\n'
-..'first_name: '..(result.from.first_name or '')..'\n'
-..'last_name: '..(result.from.last_name or '')..'\n'
-..'user_name: @'..(result.from.username or '')..'\n'
-..'ID: '..result.from.id
-send_msg(extra.receiver, text, ok_cb, true)
-end
+--local function action_by_reply(extra, success, result)
+--local text = 'name: '..(result.from.first_name or '')..' '..(result.from.last_name or '')..'\n'
+--..'first_name: '..(result.from.first_name or '')..'\n'
+--..'last_name: '..(result.from.last_name or '')..'\n'
+--..'user_name: @'..(result.from.username or '')..'\n'
+--..'ID: '..result.from.id
+--send_msg(extra.receiver, text, ok_cb, true)
+--end
 
 local function returnids(extra, success, result)
 local chat_id = extra.msg.to.id
