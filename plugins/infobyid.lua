@@ -8,7 +8,7 @@ end
 local function run(msg, matches)
         chat = 'chat#'..msg.to.id
         user1 = 'user#'..matches[2]
-        user_info(chat, user1, callback, false)
+        user_info(chat, user1, callback, true)
 
       end
 return {
