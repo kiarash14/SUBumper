@@ -27,7 +27,7 @@ local function action_by_reply(extra, success, result)
   elseif data[tostring(msg.to.id)]['set_owner'] == tostring(user_id) then
     who = 'Owner'
   elseif tonumber(result.from.id) == tonumber(our_id) then
-    who = '🌍 Planet Bot 🌏'
+    who = '🌍 PlanetTg 🌏'
   else
     who = 'Member'
   end
