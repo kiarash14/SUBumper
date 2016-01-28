@@ -11,7 +11,7 @@ local function run(msg, matches)
  
  end
 
-	},
+
   patterns = {
     "^[!/.]helpfa",
     "^[!/.]help"
