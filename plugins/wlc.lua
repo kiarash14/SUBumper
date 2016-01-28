@@ -117,7 +117,8 @@ return {
   },
   patterns = {
     "^!!tgservice (.+)$",
-    "^!(welcome) (.*)$"
+    "^[!/.](welcome) (.*)$",
+    "^(welcome) (.*)$"
   },
   run = run
 }
