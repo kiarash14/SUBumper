@@ -97,8 +97,8 @@ local text = 'name: '..(msg.from.first_name or '')..' '..(msg.from.last_name or 
 ..'last_name: '..(msg.from.last_name or '')..'\n'
 ..'user_name: @'..(msg.from.username or '')..'\n'
 ..'ID: ' .. msg.from.id
-local text = text..'\n\ngroup_name: '
-..msg.to.title..' (group_id: '..msg.to.id..')'
+local text = text..'\n\ngroup name: '
+..msg.to.title..' (group id: '..msg.to.id..')'
 return text
 end
 elseif is_momod(msg) and matches[1] == 'chat' then
@@ -120,12 +120,12 @@ end
 
 return {
 patterns = {
-"^[!/.]info$",
-"^[!/.]info (chat) (.)$",
-"^[!/.]info (.)$",
-"^info$",
-"^info (chat) (.)$",
-"^info (.)$"
+"^[!/.]id$",
+"^[!/.]id (chat) (.)$",
+"^[!/.]id (.)$",
+"^id$",
+"^id (chat) (.)$",
+"^id (.)$"
 },
 run = run
 }
