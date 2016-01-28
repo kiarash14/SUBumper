@@ -9,11 +9,12 @@ do
  
  end
 
-
+return {
   patterns = {
     "^[!/.]helpfa",
     "^[!/.]help"
   },
+  run = run,
 }
 
 
