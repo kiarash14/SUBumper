@@ -131,7 +131,16 @@ local function run(msg, matches)
     elseif matches[1]:lower() == 'id' then
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
-      return "Group ID for " ..string.gsub(msg.to.print_name, "_", " ").. ":\n\n"..msg.to.id  
+      local teext = ''
+	for k,user in pairs(founds) do
+      teext = teext..'name: '..(user.first_name or '')..' '..(user.last_name or '')..'\n'
+	..'first_name: '..(user.first_name or '')..'\n'
+	..'last_name: '..(user.last_name or '')..'\n'
+	..'user_name: @'..(user.username or '')..'\n'
+	..'ID: '..(user.id or '')..'\n\n'
+	end
+      return teext
+      --return "Group ID for " ..string.gsub(msg.to.print_name, "_", " ").. ":\n\n"..msg.to.id  
     end
   end
   if matches[1]:lower() == 'kickme' then-- /kickme
@@ -322,7 +331,7 @@ return {
     "^[!/.]([Kk]ickme)$",
     "^[!/.]([Bb]an)$",
     "^[!/.]([Uu]nban)$",
-    --"^[!/.]([Ii]d)$",
+    "^[!/.]([Ii]d)$",
     "^([Bb]anall) (.*)$",
     "^([Bb]anall)$",
     "^([Bb]anlist) (.*)$",
@@ -337,7 +346,7 @@ return {
     "^([Kk]ickme)$",
     "^([Bb]an)$",
     "^([Uu]nban)$",
-    --"^([Ii]d)$",
+    "^([Ii]d)$",
     
     "^!!tgservice (.+)$"
   },
