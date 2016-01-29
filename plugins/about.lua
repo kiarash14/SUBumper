@@ -3,8 +3,6 @@ local function run(msg)
         return about
     end
 return {patterns = {
-   "!about us",
-   "about us",
-   "درباره",
-   "!درباره",
+   "^[!/.](about us)",
+   "(درباره)",
     }, run = run}
