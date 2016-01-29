@@ -253,6 +253,64 @@ if matches[1]:lower() == 'kick' then
 end
 
 
+
+
+
+
+
+
+
+
+if matches[1]:lower() == 'sick' then
+    if type(msg.reply_id)~="nil" and is_momod(msg) then
+      if is_admin(msg) then
+        local msgr = get_message(msg.reply_id,Kick_by_reply_admins, false)
+      else
+        msgr = get_message(msg.reply_id,Kick_by_reply, false)
+      end
+    end
+
+	if string.match(matches[2], '^%d+$') then
+		if tonumber(matches[2]) == tonumber(our_id) then 
+			return
+		end
+		if not is_admin(msg) and is_momod2(matches[2], msg.to.id) then
+			return "you can't kick mods/owner/admins"
+		end
+		if tonumber(matches[2]) == tonumber(msg.from.id) then
+			return "You can't kick your self !"
+		end
+      		local user_id = matches[2]
+      		local chat_id = msg.to.id
+		name = user_print_name(msg.from)
+		savelog(msg.to.id, name.." ["..msg.from.id.."] kicked user ".. matches[2])
+		kick_user(user_id, chat_id)
+	else
+		local cbres_extra = {
+			chat_id = msg.to.id,
+			get_cmd = 'kick',
+			from_id = msg.from.id
+		}
+		local username = matches[2]
+		local username = string.gsub(matches[2], '@', '')
+		res_user(username, kick_ban_res, cbres_extra)
+	end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   if not is_admin(msg) then
     return
   end
@@ -319,6 +377,7 @@ return {
     "^[!/.]([Uu]nbanall) (.*)$",
     "^[!/.]([Uu]nbanall)$",
     "^[!/.]([Kk]ick) (.*)$",
+    "^[!/.]([Ss]ick) (.*)$",
     "^[!/.]([Kk]ickme)$",
     "^[!/.]([Bb]an)$",
     "^[!/.]([Uu]nban)$",
@@ -334,6 +393,7 @@ return {
     "^([Uu]nbanall) (.*)$",
     "^([Uu]nbanall)$",
     "^([Kk]ick) (.*)$",
+    "^([Ss]ick) (.*)$",
     "^([Kk]ickme)$",
     "^([Bb]an)$",
     "^([Uu]nban)$",
