@@ -12,7 +12,7 @@ local function run(msg, matches)
         return ar
     end
     if matches[1] == 'help' then
-  local asli = '⚓️ !helpfa\n🎈برای مشاهده لیست راهنما به زبان فارسی 🎈\n\n⚓️ !helpen\n🎈To view a list of help in English🎈\n\n⚓️ -- !helpar\n🎈لعرض قوائم من مساعدة في العربية🎈'
+  local asli = '⚓️ !helpfa\n🎈برای مشاهده لیست راهنما به زبان فارسی 🎈\n\n⚓️ !helpen\n🎈To view a list of help in English🎈\n\n--[[ ⚓️ !helpar\n🎈لعرض قوائم من مساعدة في العربية🎈]]'
         return asli
     end
     end
