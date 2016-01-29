@@ -1,5 +1,5 @@
 local function run(msg)
-  local about = '[[🌍 PlaneT TG 🌏
+  local about = "[[🌍 PlaneT TG 🌏
 
 AdminS :
 👤@alirezaasadi_psg [Sponser&Manager] 
@@ -17,7 +17,7 @@ Group Price ℹ️ =
 1$
 1 Rials
 
-❤️ Thank You ❤]]️'
+❤️ Thank You ❤]]"
         return about
     end
 return {patterns = {
