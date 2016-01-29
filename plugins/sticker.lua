@@ -3,8 +3,12 @@ do
 local function run(msg, matches)
   local receiver = get_receiver(msg)
 	 if matches[1] == 'persiangulf' then
-      send_document(receiver, "./bot/sticker.webp", ok_cb, false)
+      send_document(receiver, "./bot/persiangulf.webp", ok_cb, false)
 end
+ if matches[1] == 'planet' then
+      send_document(receiver, "./bot/logo.webp", ok_cb, false)
+end
+
 end
 
 
@@ -14,8 +18,8 @@ return {
     "!list files : Envía un archivo con los no"
   },
   patterns = {
-  "^[!/.](persiangulf)$",
-  "^(persiangulf)$"
+ -- "^[!/.](persiangulf)$",
+  "^[!/.](planet)$"
   },
   run = run
 }
