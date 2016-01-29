@@ -6,9 +6,8 @@ local function run(msg, matches)
       send_document(receiver, "./bot/persiangulf.webp", ok_cb, false)
 end
  if matches[1] == 'planet' then
- 	return "sending...."
-else
       send_document(receiver, "./bot/logo.webp", ok_cb, false)
+      	return "sending...."
 end
 
 end
