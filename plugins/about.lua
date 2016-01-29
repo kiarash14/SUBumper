@@ -1,5 +1,5 @@
 local function run(msg)
-  local about = "[[🌍 PlaneT TG 🌏
+  local about = "🌍 PlaneT TG 🌏[[
 
 AdminS :
 👤@alirezaasadi_psg [Sponser&Manager] 
