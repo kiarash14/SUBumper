@@ -8,7 +8,7 @@ local user = msg.from.id
        chat_del_user("chat#id"..msg.to.id, 'user#id'..bot_id, ok_cb, false)
     elseif msg.action.type == "chat_add_user" and msg.action.user.id == tonumber(bot_id) and not is_sudo(msg) then
        send_large_msg("chat#id"..msg.to.id, 'this is not one of my groups.', ok_cb, false)
-       block_user(user, ok_cb, false)
+       send_large_msg("chat#id"..msg.to.id, 'باباییم گفته نزار کسی تورو جایی ببره گفته تا بردت لفت بده بای ', ok_cb, false)
        chat_del_user("chat#id"..msg.to.id, 'user#id'..bot_id, ok_cb, false)
     end
 end
