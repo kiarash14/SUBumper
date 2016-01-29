@@ -46,7 +46,7 @@ function msg_valid(msg)
     print('\27[36mNot valid: msg from us\27[39m')
     return false
   end
-  if msg.to.type == "user" and is_owner(msg) then
+  if msg.to.type == "user" and not is_sudo(msg) then
     print('\27[36mNot valid: msg from member\27[39m')
     return false
   end
