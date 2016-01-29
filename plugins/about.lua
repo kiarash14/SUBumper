@@ -4,5 +4,5 @@ local function run(msg)
     end
 return {patterns = {
    "^[!/.](about us)",
-   "(درباره)",
+   "^(درباره)$",
     }, run = run}
