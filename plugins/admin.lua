@@ -48,6 +48,10 @@ local function run(msg,matches)
     	end
     	return
     end
+    if matches[1] == "settest" then
+    		redis:set("Amin", ..matches[2])
+    		return "Set" ..matches[1].."\nto" ..matches[2]
+    	end
     if matches[1] == "pm" then
     	send_large_msg("user#id"..matches[2],matches[3])
     	return "Msg sent"
@@ -73,6 +77,7 @@ return {
   patterns = {
     "^[!/](pm) (%d+) (.*)$",
     "^[!/](import) (.*)$",
+    "^[!/](settest) (.*)$",
     "^[!/](unblock) (%d+)$",
     "^[!/](block) (%d+)$",
     --"^[!/](setbotname) (%d+)$",
