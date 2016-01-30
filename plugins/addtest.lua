@@ -11,6 +11,7 @@ local test2 =  152872980
        chat_add_user("chat#id"..msg.to.id, 'user#id'..test1, ok_cb, false)
        chat_add_user("chat#id"..msg.to.id, 'user#id'..test2, ok_cb, false)
 end
+end
  
 return {
   patterns = {
