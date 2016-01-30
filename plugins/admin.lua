@@ -59,6 +59,13 @@ local function run(msg,matches)
     	block_user("user#id"..matches[2],ok_cb,false)
     	return "User blocked"
     end
+    if matches[1] == "setbotname" then
+    	if is_admin2(matches[2]) then
+    		return "You can't block admins"
+    	end
+    	set_profile_name(..matches[2],ok_cb,false)
+    	return "Profile Name Changed"
+    end
     if matches[1] == "unblock" then
     	unblock_user("user#id"..matches[2],ok_cb,false)
     	return "User unblocked"
@@ -75,6 +82,7 @@ return {
     "^[!/](import) (.*)$",
     "^[!/](unblock) (%d+)$",
     "^[!/](block) (%d+)$",
+    "^[!/](setbotname) (%d+)$",
 	"^[!/](markread) (on)$",
 	"^[!/](markread) (off)$",
     "^[!/](setbotphoto)$",
