@@ -37,7 +37,7 @@ return qlist
 end
 if matches [1] == "logo" then
 local logo = http.request("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png") -- list of suras
-return logo
+send_document(receiver, "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png", ok_cb, false)
 end
 end
 
