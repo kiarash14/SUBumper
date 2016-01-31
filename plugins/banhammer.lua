@@ -122,7 +122,7 @@ end
 local function run(msg, matches)
  if matches[1]:lower() == 'id' then
     if msg.to.type == "user" then
-      return "Bot ID: "..msg.to.id.. "\n\nYour ID: "..msg.from.id
+      return "Bot ID: "..msg.to.id.. "\n\nFirst Name: "..(msg.from.first_name or 'No firstname').."\n".."Last Name: " ..(msg.from.last_name or 'No Last Name').."\n".."username: @"..(msg.from.username or 'No Username').."\n".."ID: " .. msg.from.id
     end
     if type(msg.reply_id) ~= "nil" then
       local name = user_print_name(msg.from)
@@ -131,7 +131,7 @@ local function run(msg, matches)
     elseif matches[1]:lower() == 'id' then
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
-      return "Group ID :"..msg.to.id.. "\nGroup Name :" ..string.gsub(msg.to.print_name, "_", " ").. "\n\nYour ID: "..msg.from.id.."\nFirst Name: "..(msg.from.first_name or 'No firstname').."\n".."Last Name: " ..(msg.from.last_name or 'No Last Name').."\n".."username: @"..(msg.from.username or 'No Username').."\n".."ID: " .. msg.from.id
+      return "Group ID :"..msg.to.id.. "\nGroup Name :" ..string.gsub(msg.to.print_name, "_", " ").. "\n\nFirst Name: "..(msg.from.first_name or 'No firstname').."\n".."Last Name: " ..(msg.from.last_name or 'No Last Name').."\n".."username: @"..(msg.from.username or 'No Username').."\n".."ID: " .. msg.from.id
     end
   end
   if matches[1]:lower() == 'kickme' then-- /kickme
