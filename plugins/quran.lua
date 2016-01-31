@@ -32,7 +32,7 @@ elseif matches[1] == "sura" then
 local target = matches[2]
 return view_sura(chat_id, target)
 elseif matches [1] == "quran" then
-local qlist = http.request(umbrella.."list.txt") -- list of suras
+local qlist = http.request("http://mpfan.ir/list.txt") -- list of suras
 return qlist
 end
 end
