@@ -35,6 +35,10 @@ elseif matches [1] == "quran" then
 local qlist = http.request("http://mpfan.ir/list.txt") -- list of suras
 return qlist
 end
+if matches [1] == "logo" then
+local logo = http.request("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png") -- list of suras
+return logo
+end
 end
 
 -- other help and commands
@@ -49,6 +53,7 @@ patterns = {
 "^[!/](sura) (.+)$",
 "^[!/](read) (.+)$",
 "^[!/](quran)$",
+"^[!/](logo)$",
 }, 
 run = run,
 }
