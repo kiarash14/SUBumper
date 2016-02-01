@@ -68,7 +68,8 @@ local function run(msg,matches)
      if matches[1] == "settest" then
      	local esm = ..matches[2]
      	local magham = ..matches[3]
-   	redis:set(..esm.., ..magham..)
+   	--redis:set(..esm.., ..magham..)
+   	    redis:hset(esm, magham)
     		return "Set" ..esm.. "to" ..magham
     	end
     	return
