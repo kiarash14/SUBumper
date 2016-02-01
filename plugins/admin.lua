@@ -54,7 +54,7 @@ local function run(msg,matches)
     
     if matches[1] == "pvread" then
     	if matches[2] == "on" then
-    		redis:set("bot:pvread", "on")
+    		redis:set("bot:pvread", "off")
     		return "Check pv messages  > on"
     	end
     	if matches[2] == "off" then
