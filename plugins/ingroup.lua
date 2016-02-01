@@ -509,7 +509,28 @@ local function unlock_group_leave(msg, data, target)
     return 'Leaving users will not be banned'
   end
 end
-
+local group_english_lock = data[tostring(target)]['settings']['lock_english']
+if group_english_lock == 'yes' then
+return 'english is already locked'
+else
+data[tostring(target)]['settings']['lock_english'] = 'yes'
+save_data(_config.moderation.data, data)
+return 'english has been locked'
+end
+end
+local function unlock_group_english(msg, data, target)
+if not is_momod(msg) then
+return "For moderators only!"
+end
+local group_english_lock = data[tostring(target)]['settings']['lock_english']
+if group_english_lock == 'no' then
+return 'english is already unlocked'
+else
+data[tostring(target)]['settings']['lock_english'] = 'no'
+save_data(_config.moderation.data, data)
+return 'english has been unlocked'
+end
+end
 local function unlock_group_photomod(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
@@ -1219,6 +1240,10 @@ local function run(msg, matches)
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked leaving ")
        return lock_group_leave(msg, data, target)
      end
+      if matches[2] == 'english' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked english ")
+        return lock_group_english(msg, data, target)
+      end
       if matches[2] == 'join' then
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked joining link ")
        return lock_group_join(msg, data, target)
@@ -1249,6 +1274,10 @@ local function run(msg, matches)
       if matches[2] == 'bots' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked bots ")
         return unlock_group_bots(msg, data, target)
+      end
+       if matches[2] == 'english' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked English ")
+        return unlock_group_english(msg, data, target)
       end
      if matches[2] == 'adds' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked adds ")
