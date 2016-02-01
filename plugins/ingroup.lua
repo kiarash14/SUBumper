@@ -562,7 +562,7 @@ local function lock_group_adds(msg, data, target)
      return 'Group silent has been enabled'
    end
  end
- end
+ 
  local function unlock_silent(msg, data, target)
    if not is_momod(msg) then
      return "For moderators only!"
