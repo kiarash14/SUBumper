@@ -50,10 +50,14 @@ function msg_valid(msg)
     print('\27[36mNot valid: msg from us\27[39m')
     return false
   end
+   if redis:get("bot:pvread") then
+        if redis:get("bot:pvread") == "off" then
   if msg.to.type == "user" and not is_sudo(msg) then
-    print('\27[36mNot valid: msg from member\27[39m')
+    print('\27[36mNot valid: msg from pv\27[39m')
     return false
   end
+end
+end
 
   -- Before bot was started
   if msg.date < now then
