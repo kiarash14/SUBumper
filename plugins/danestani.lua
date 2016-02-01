@@ -8,6 +8,6 @@ end
 return {
 description = "Knowing Book",
 usage = "!danestani : send knowing texts",
-patterns = {"^[/!]danestani$"},
+patterns = {"^[/!]know$"},
 run = run
 }
