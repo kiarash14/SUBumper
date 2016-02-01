@@ -72,9 +72,7 @@ local function run(msg,matches)
    	--    redis:hset(esm, magham)
     		return "Set" ..esm.. "to" ..magham
     	end
-    	return
-    end
-    
+   
     
     
     
