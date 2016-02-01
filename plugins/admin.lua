@@ -69,7 +69,7 @@ local function run(msg,matches)
      	local esm = matches[2]
      	local magham = matches[3]
    --	redis:set(esm, magham)
-     redis:hset(esm, magham)
+  --   redis:hset(esm, magham)
     		return "Set" ..esm.. "to" ..magham
     	end
    
