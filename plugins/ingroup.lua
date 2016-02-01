@@ -523,8 +523,6 @@ local function unlock_group_photomod(msg, data, target)
     return 'Group photo has been unlocked'
   end
 end
-end
-end
 local function lock_group_adds(msg, data, target)
    if not is_momod(msg) then
      return "For moderators only!"
