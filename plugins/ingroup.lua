@@ -495,7 +495,7 @@ local function lock_group_leave(msg, data, target)
   end
   return 'Leaving users will be banned'
 end
-
+end
 local function unlock_group_leave(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
