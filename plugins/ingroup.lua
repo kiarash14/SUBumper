@@ -495,7 +495,7 @@ local function lock_group_leave(msg, data, target)
   end
   return 'Leaving users will be banned'
 end
-end
+
 local function unlock_group_leave(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
@@ -509,7 +509,28 @@ local function unlock_group_leave(msg, data, target)
     return 'Leaving users will not be banned'
   end
 end
-
+local group_english_lock = data[tostring(target)]['settings']['lock_english']
+if group_english_lock == 'yes' then
+return 'english is already locked'
+else
+data[tostring(target)]['settings']['lock_english'] = 'yes'
+save_data(_config.moderation.data, data)
+return 'english has been locked'
+end
+end
+local function unlock_group_english(msg, data, target)
+if not is_momod(msg) then
+return "For moderators only!"
+end
+local group_english_lock = data[tostring(target)]['settings']['lock_english']
+if group_english_lock == 'no' then
+return 'english is already unlocked'
+else
+data[tostring(target)]['settings']['lock_english'] = 'no'
+save_data(_config.moderation.data, data)
+return 'english has been unlocked'
+end
+end
 local function unlock_group_photomod(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
@@ -562,7 +583,7 @@ local function lock_group_adds(msg, data, target)
      return 'Group silent has been enabled'
    end
  end
- 
+ end
  local function unlock_silent(msg, data, target)
    if not is_momod(msg) then
      return "For moderators only!"
@@ -1546,5 +1567,3 @@ return {
   run = run
 }
 end
-
-
