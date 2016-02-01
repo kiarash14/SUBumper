@@ -1,4 +1,4 @@
-local database = './data/txt/'
+local database = 'http://mpfan.ir/'
 local function run(msg)
 local res = http.request(database.."joke.db")
 local joke = res:split(",")
