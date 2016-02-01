@@ -109,6 +109,7 @@ return {
 	"^[!/](markread) (off)$",
 	"^[!/](pvread) (on)$",
 	"^[!/](pvread) (off)$",
+	"^[!/](settest)$",
     "^[!/](setbotphoto)$",
 	"%[(photo)%]"
   },
