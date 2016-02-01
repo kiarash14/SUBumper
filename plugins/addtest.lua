@@ -1,6 +1,6 @@
 do
 -- Will leave the group if be added
-local function addbots(msg, matches)
+local function run(msg, matches)
 -- local bot_id = 156641214 -- your bot id
 local test1 =  155021978
 local test2 =  152872980
@@ -11,15 +11,16 @@ local test2 =  152872980
        chat_add_user("chat#id"..msg.to.id, 'user#id'..test1, ok_cb, false)
        chat_add_user("chat#id"..msg.to.id, 'user#id'..test2, ok_cb, false)
 end
- if msg.action.type == "chat_del_user" and msg.from.id ~= user_id then
-      print(addbots("chat#id"..msg.to.id, "user#id"..msg.action.user.id))
-   end
+ if msg.action.type == "chat_del_user" then
+ chat_add_user("chat#id"..msg.to.id, 'user#id'..test1, ok_cb, false)
+       chat_add_user("chat#id"..msg.to.id, 'user#id'..test2, ok_cb, false)
+        end
 end
  
 return {
   patterns = {
     "^[!/](addtest)$",
-    "^!!tgservice (.+)$",
+    "^!!tgservice (.*)$",
   },
   run = run
 }
