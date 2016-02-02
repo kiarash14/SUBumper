@@ -92,12 +92,12 @@ if is_momod(msg) then
 msgr = get_message(msg.reply_id, action_by_reply, {receiver=receiver})
 end
 else
-local text = 'name: '..(msg.from.first_name or '')..' '..(msg.from.last_name or '')..'\n'
-..'first_name: '..(msg.from.first_name or '')..'\n'
-..'last_name: '..(msg.from.last_name or '')..'\n'
-..'user_name: @'..(msg.from.username or '')..'\n'
+local text = 'Name: '..(msg.from.first_name or '')..' '..(msg.from.last_name or '')..'\n'
+..'First Name: '..(msg.from.first_name or '')..'\n'
+..'Last Name: '..(msg.from.last_name or '')..'\n'
+..'User Name: @'..(msg.from.username or '')..'\n'
 ..'ID: ' .. msg.from.id
-local text = text..'\n\ngroup name: '
+local text = text..'\n\nGroup Name: '
 ..msg.to.title..' (group id: '..msg.to.id..')'
 return text
 end
