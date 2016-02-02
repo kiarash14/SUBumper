@@ -1,4 +1,4 @@
-local database = 'http://mofan.ir/'
+local database = 'http://mpfan.ir/'
 local function run(msg)
 local res = http.request(database.."jomlak.db")
 local jomlak = res:split(",")
