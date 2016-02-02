@@ -98,7 +98,7 @@ local text = 'Name: '..(msg.from.first_name or '')..' '..(msg.from.last_name or 
 ..'User Name: @'..(msg.from.username or '')..'\n'
 ..'ID: ' .. msg.from.id
 local text = text..'\n\nGroup Name: '
-..msg.to.title..' (group id: '..msg.to.id..')'
+..msg.to.title..' \nGroup ID: '..msg.to.id..
 return text
 end
 elseif is_momod(msg) and matches[1] == 'chat' then
