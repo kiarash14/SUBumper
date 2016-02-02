@@ -5,6 +5,7 @@ local res = http.request(database.."esm.db")
 local esm = res:split(",")
 return esm[math.random(#esm)]
 end
+end
 local database = 'http://mpfan.ir/'
 local function run(msg)
 local res2 = http.request(database.."esmsudo.db")
