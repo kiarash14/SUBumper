@@ -6,7 +6,7 @@ local res = http.request(database.."esm.db")
 local esm = res:split(",")
 return esm[math.random(#esm)]
 end
-
+end
 
 return {
 description = "Jomlak Sender",
