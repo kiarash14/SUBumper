@@ -1,3 +1,5 @@
+do
+local function run(msg)
 if not is_sudo(msg) then
 local database = 'http://mpfan.ir/'
 local function run(msg)
@@ -12,7 +14,7 @@ local res2 = http.request(database.."esmsudo.db")
 local esmsudo = res2:split(",")
 return esmsudo[math.random(#esmsudo)]
 end
-
+end
 
 return {
 description = "Jomlak Sender",
@@ -20,3 +22,4 @@ usage = "!jomlak : send random texts",
 patterns = {"^[/!](esm) (man)$"},
 run = run
 }
+end
