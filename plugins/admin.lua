@@ -135,10 +135,10 @@ local function run(msg,matches)
     	return
     end
         if matches[1] == "pvread" then
-        if matches[2] == "stat" then
-        local stat = redis:get("bot:pvread")
-        return stat
-        end
+        --if matches[2] == "stat" then
+        --local stat = redis:get("bot:pvread")
+        --return stat
+        --end
     	if matches[2] == "on" then
     		redis:del("bot:pvread")
     		return "Check pv messages  > on"
