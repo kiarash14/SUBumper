@@ -134,26 +134,6 @@ local function run(msg,matches)
     	end
     	return
     end
-        if matches[1] == "pvread" then
-        --if matches[2] == "stat" then
-        --local stat = redis:get("bot:pvread")
-        --return stat
-        --end
-    	if matches[2] == "on" then
-    		redis:del("bot:pvread")
-    		return "Check pv messages  > on"
-    	end
-    	if matches[2] == "off" then
-    		
-    	redis:set("bot:pvread", "off")
-    		return "Check pv messages > off"
-    	end
-    	--if redis:get("bot:pvread") then
-        --if redis:get("bot:pvread") == "off" then
-        	--return "Pv read off bud"
---end
---end
-
     if matches[1] == "pm" then
     	send_large_msg("user#id"..matches[2],matches[3])
     	return "Msg sent"
@@ -198,8 +178,6 @@ return {
 	"^[!/](block) (%d+)$",
 	"^[!/](markread) (on)$",
 	"^[!/](markread) (off)$",
-	"^[!/](pvread) (on)$",
-	"^[!/](pvread) (off)$",
 	"^[!/](setbotphoto)$",
 	"%[(photo)%]",
 	"^[!/](contactlist)$",
@@ -209,4 +187,3 @@ return {
   },
   run = run,
 }
-end
