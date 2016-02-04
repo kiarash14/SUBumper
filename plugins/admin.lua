@@ -147,10 +147,10 @@ local function run(msg,matches)
     		
     	redis:set("bot:pvread", "off")
     		return "Check pv messages > off"
+    	end
     	if redis:get("bot:pvread") then
         if redis:get("bot:pvread") == "off" then
         	return "Pv read off bud"
-end
 end
 end
 
