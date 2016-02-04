@@ -29,8 +29,8 @@ local function run(msg, matches)
     end
     end
 return {patterns = {
-   "^[!/.](helpfa)",
-   "^[!/.](helpen)",
+   "^[!/.](helpfa)$",
+   "^[!/.](helpen)$",
    --"^[!/.](helpar)",
-   "^[!/.](help)",
+   "^[!/.](help)$",
     }, run = run}
