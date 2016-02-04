@@ -147,15 +147,12 @@ local function run(msg,matches)
     		
     	redis:set("bot:pvread", "off")
     		return "Check pv messages > off"
-    		
     	if redis:get("bot:pvread") then
         if redis:get("bot:pvread") == "off" then
         	return "Pv read off bud"
 end
 end
-    	end
-    	return
-    end
+end
 
     if matches[1] == "pm" then
     	send_large_msg("user#id"..matches[2],matches[3])
