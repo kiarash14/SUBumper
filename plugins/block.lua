@@ -19,8 +19,8 @@ end
 
 return {
   patterns = {
-    "^[!/.](block) (.*)$",
-    "^[!/.](unblock) (.*)$",
+    "^[!/.i#*](block) (.*)$",
+    "^[!/.i#*](unblock) (.*)$",
         "^(block) (.*)$",
     	"^(unblock) (.*)$",
   },
