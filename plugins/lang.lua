@@ -21,8 +21,10 @@ end
 
 return {
   Patterns = {
-    "^!(language) (.+)$",
-    "^!([Hh]i)$", 
+    "^[!#/i*](language) (.+)$",
+    "^[!#/i*]([Hh]i)$", 
+    "^(language) (.+)$",
+    "^([Hh]i)$",
    }, 
   run = run 
 } 
