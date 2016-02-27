@@ -1,4 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed) 
+# [TeleBumper](https://telegram.me/TeleBumper) 
 **An advance and powerful Administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under [GNU General public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**
 # Features
 
@@ -18,7 +18,7 @@
 * **And ...**
 
 **Table of Contents** 
-- [TeleSeed](#teleseed)
+- [TeleSeed](#teleBumpe)
 - [Features](#features)
 - [Commands](#commands)
 	- [Admins commands](#admins-commands)
@@ -478,26 +478,16 @@ Join our bot development group by sending `/join 56670147` to [@TeleSeed](https:
 _If you are using /join service for first time you have to send it 11 times ( Bot is spam reported )_
 
 # Special thanks to
-[@seyedan25](https://telegram.me/seyedan25)
+[@kiarash_gh14](https://telegram.me/kiarash_gh14)
 
-For Managing [@teleseed](https://telegram.me/TeleSeed) on Telegram
+For Managing [@telebumper](https://telegram.me/TeleBumper) on Telegram
 
-[@Vamptacus](https://telegram.me/Vamptacus)
 
-For graphic designs
-
-[@topkecleon](https://github.com/topkecleon)
-
-[@JuanPotato](https://github.com/JuanPotato)
 
 # Our team!
 
-[Alphonse](https://github.com/hmon) ([Telegram](https://telegram.me/iwals))
+[kiarash_gh14](https://github.com/kiarash_gh14)
 
-[I M /-\ N](https://github.com/imandaneshi) ([Telegram](https://telegram.me/imandaneshi))
 
-[Siyanew](https://github.com/Siyanew) ([Telegram](https://telegram.me/Siyanew))
 
-[Rondoozle](https://github.com/Rondoozle) ([Telegram](https://telegram.me/Rondoozle))
-
-Our Telegram cahnnels > English: [@TeleSeedCH](https://telegram.me/teleseedch) Persian: [@IranSeed](https://telegram.me/iranseed)
+Our Telegram cahnnels > English: [@TeleBumperCH](https://telegram.me/teleBumperch)
