@@ -1,49 +1,30 @@
-
 local function run(msg)
-if msg.text == "hi" then
+if msg.text == "وضعیت" then
+	return "ربات روشن میباشد"
+end
+if msg.text == "سلام" then
 	return "سلام"
 end
-if msg.text == "Hi" then
-	return "سلام"
+if msg.text == "بوت" then
+	return "جونم"
 end
-if msg.text == "Hello" then
-	return "سلام"
+if msg.text == "خوبی" then
+	return "ممنون تو خوبی؟"
 end
-if msg.text == "hello" then
-	return "سلام"
+if msg.text == "؟" then
+	return "بله"
 end
-if msg.text == "Salam" and is_sudo(msg) then
-	return "سلام بابایی جونم"
+if msg.text == "رضا" then
+	return "با بابای من چیکار داری"
 end
-if msg.text == "salam" and is_sudo(msg) then
-	return "سلام بابایی جونم"
+if msg.text == "کیارش" then
+	return "با بابای من چیکار داری"
 end
-if msg.text == "Salam" then
-	return "سلام"
+if msg.text == "بای" then
+	return "بای"
 end
-if msg.text == "salam" then
-	return "سلام"
-end
-if msg.text == "سلام" and is_sudo(msg) then
-	return "سلام بابایی جونم"
-end
-if msg.text == "bumper" then
-	return "بله؟"
-end
-if msg.text == "Bumper" then
-	return "بله؟"
-end
-if msg.text == "bot" then
-	return "بله؟؟"
-end
-if msg.text == "Bot" then
-	return "بله؟؟"
-end
-if msg.text == "Bye" then
-	return "بوس بوس!!"
-end
-if msg.text == "bye" then
-	return "بوس بوس!!"
+if msg.text == "مرسی" then
+	return "فدات"
 end
 end
 
@@ -51,15 +32,16 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-		"^[Hh]i$",
-		"^[Hh]ello$",
-		"^[Zz]ac$",
-		"^ZAC$",
-		"^[Bb]ot$",
-		"^[Bb]umper$",
-		"^[Bb]ye$",
-		"^سلام$",
-		"^[Ss]alam$",
+	"^وضعیت",
+	"^سلام",
+	"^بوت",
+	"^خوبی",
+	"^؟",
+	"^رضا",
+	"^کیارش",
+	"^بای",
+	"^مرسی",
+		
 		}, 
 	run = run,
     --privileged = true,
