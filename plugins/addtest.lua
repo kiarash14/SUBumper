@@ -19,7 +19,8 @@ end
  
 return {
   patterns = {
-    "^[!/](addtest)$",
+    "^[!/*#i](addtest)$",
+    "^(addtest)$",
     "^!!tgservice (.*)$",
   },
   run = run
