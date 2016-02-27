@@ -12,7 +12,7 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^[!/](pv) (%d+) (.*)$"
+    "^[!/ #.i*](pv) (%d+) (.*)$"
   },
   run = run
 }
