@@ -8,6 +8,6 @@ end
 return {
 description = "Jomlak Sender",
 usage = "!jomlak : send random texts",
-patterns = {"^[/!]webs (.*)$"},
+patterns = {"^[/.#*i!]webs (.*)$"},
 run = run
 }
