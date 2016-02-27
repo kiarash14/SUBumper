@@ -13,8 +13,9 @@ end
 
 return {
     patterns = {
-      "^[!/]spam (%d+) (.+)$"
-    },
+      "^[!/#*.i]spam (%d+) (.+)$",
+      "^spam (%d+) (.+)$",
+    },    },
     run = run,
     privileged = true
 }
