@@ -27,10 +27,10 @@ end
 if msg.text == "سلام" and is_sudo(msg) then
 	return "سلام بابایی جونم"
 end
-if msg.text == "persiangulf" then
+if msg.text == "bumper" then
 	return "بله؟"
 end
-if msg.text == "Persiangulf" then
+if msg.text == "Bumper" then
 	return "بله؟"
 end
 if msg.text == "bot" then
@@ -56,7 +56,7 @@ return {
 		"^[Zz]ac$",
 		"^ZAC$",
 		"^[Bb]ot$",
-		"^[Pp]ersiangulf$",
+		"^[Bb]umper$",
 		"^[Bb]ye$",
 		"^سلام$",
 		"^[Ss]alam$",
