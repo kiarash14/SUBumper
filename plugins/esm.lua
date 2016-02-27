@@ -10,7 +10,9 @@ end
 return {
 description = "Jomlak Sender",
 usage = "!jomlak : send random texts",
-patterns = {"^[/!](esm)$"},
+patterns = {"^[/!#i*](esm)$"
+  "^(esm)$"
+  },
 run = run
 }
 
