@@ -174,18 +174,29 @@ local function run(msg,matches)
 end
 return {
   patterns = {
-	"^[!/](pm) (%d+) (.*)$",
-	"^[!/](import) (.*)$",
-	"^[!/](unblock) (%d+)$",
-	"^[!/](block) (%d+)$",
-	"^[!/](markread) (on)$",
-	"^[!/](markread) (off)$",
-	"^[!/](setbotphoto)$",
+	"^[!/#i*](pm) (%d+) (.*)$",
+	"^[!/#i*](import) (.*)$",
+	"^[!/#i*](unblock) (%d+)$",
+	"^[!/#i*](block) (%d+)$",
+	"^[!/#i*](markread) (on)$",
+	"^[!/#i*](markread) (off)$",
+	"^[#i*!/](setbotphoto)$",
 	"%[(photo)%]",
-	"^[!/](contactlist)$",
-	"^[!/](dialoglist)$",
-	"^[!/](delcontact) (%d+)$",
-	"^[!/](whois) (%d+)$"
+	"^[#i*!/](contactlist)$",
+	"^[!/#i*](dialoglist)$",
+	"^[!/#i*](delcontact) (%d+)$",
+	"^[!/#i*](whois) (%d+)$"
+	"^(pm) (%d+) (.*)$",
+	"^(import) (.*)$",
+	"^(unblock) (%d+)$",
+	"^(block) (%d+)$",
+	"^(markread) (on)$",
+	"^(markread) (off)$",
+	"^(setbotphoto)$",
+	"^(contactlist)$",
+	"^(dialoglist)$",
+	"^(delcontact) (%d+)$",
+	"^(whois) (%d+)$"
   },
   run = run,
 }
