@@ -1,4 +1,7 @@
-# [TeleBumper](https://telegram.me/TeleBumper) 
+# [TeleSeed](https://telegram.me/TeleSeed) 
+
+[![Join the chat at https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)](https://gitter.im/SEEDTEAM/TeleSeed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **An advance and powerful Administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under [GNU General public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**
 # Features
 
@@ -18,7 +21,7 @@
 * **And ...**
 
 **Table of Contents** 
-- [TeleSeed](#teleBumpe)
+- [TeleSeed](#teleseed)
 - [Features](#features)
 - [Commands](#commands)
 	- [Admins commands](#admins-commands)
@@ -180,7 +183,7 @@
 >>>_Only works in realms_ [username]
 
 ### Admins|group list in realm
->[!/]ist [admins|groups]
+>[!/]list [admins|groups]
 >>[!/]list groups
 >>>This command will return admins|groups list
 
@@ -191,8 +194,8 @@
 >>>
 >>>_Only sudo users can run this command_
 >
->/br [group_id] [text]
->>/br 123456789 Hello !
+>/bc [group_id] [text]
+>>/bc 123456789 Hello !
 >>>This command will send text to [group_id]
 
 ##Global ban commands
@@ -310,7 +313,7 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### Flood sensitivity
 >[!/]setflood [value]
->>[!/]set flood 15  
+>>[!/]setflood 15  
 >>> will set flood sensitivity to [value]
 
 ### Group rules and about
@@ -472,22 +475,34 @@ Create a realm using !createrealm command
 
 # Support and development
 
+Check out this tutorial by: [Telegram Geeks](http://telegramgeeks.com/2016/01/teleseed-tutorial/) for further assistance with setup and installation.
+
 Do not contact **us** In private for support.
 Join our bot development group by sending `/join 56670147` to [@TeleSeed](https://telegram.me/TeleSeed)
 
 _If you are using /join service for first time you have to send it 11 times ( Bot is spam reported )_
 
 # Special thanks to
-[@kiarash_gh14](https://telegram.me/kiarash_gh14)
+[@seyedan25](https://telegram.me/seyedan25)
 
-For Managing [@telebumper](https://telegram.me/TeleBumper) on Telegram
+For Managing [@teleseed](https://telegram.me/TeleSeed) on Telegram
 
+[@Vamptacus](https://telegram.me/Vamptacus)
 
+For graphic designs
+
+[@topkecleon](https://github.com/topkecleon)
+
+[@JuanPotato](https://github.com/JuanPotato)
 
 # Our team!
 
-[kiarash_gh14](https://github.com/kiarash_gh14)
+[Alphonse](https://github.com/hmon) ([Telegram](https://telegram.me/iwals))
 
+[I M /-\ N](https://github.com/imandaneshi) ([Telegram](https://telegram.me/imandaneshi))
 
+[Siyanew](https://github.com/Siyanew) ([Telegram](https://telegram.me/Siyanew))
 
-Our Telegram cahnnels > English: [@TeleBumperCH](https://telegram.me/teleBumperch)
+[Rondoozle](https://github.com/Rondoozle) ([Telegram](https://telegram.me/Rondoozle))
+
+Our Telegram cahnnels > English: [@TeleSeedCH](https://telegram.me/teleseedch) Persian: [@IranSeed](https://telegram.me/iranseed)
