@@ -17,7 +17,7 @@ return {
   description = "Simplest plugin ever!",
   usage = "echo [whatever]: echoes the msg",
   patterns = {
-    "^[!/#*i]echo +(.+) (.*)$"
+    "^[!/#*i.]echo +(.+) (.*)$"
     "^echo +(.+) (.*)$"
   },
   run = run
