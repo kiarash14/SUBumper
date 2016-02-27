@@ -233,24 +233,23 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {157059515,162108576,0,tonumber(our_id)},--Sudo users
+    sudo_users = {100096055,191801814,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-Admins
-@Mrhalix [Founder][Developer][Help&Support]
-@parsa_psg [Sponser][Help&Support]
-@solid021 [Help&Support]
+    about_text = [[
+http://s7.picofile.com/file/8234722668/Bumper 
+  
+  
+ Sudo: 
+ @kiarash_gh1 [Manager] 
+ @xXx_reza_xXx
+  
+ Id Bot 
+ @TeleBumper  
+  
+ Id Channel 
+ @TeleBumperch 
 
-Special thanks to
-MrHalix
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-Iman_daneshi
-BOY_CrazY
 ]],
     help_text_realm = [[
 Realm Commands:
