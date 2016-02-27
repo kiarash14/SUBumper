@@ -326,448 +326,453 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     helpar_text = [[
-    أوامر القائمة:
-
-!kick [اسم المستخدم | ID]
-يمكنك أيضا القيام بذلك عن طريق الرد
+Menu TeleBumper commands:
+Kick [User Name | ID]
+You can also do this by post
 〰〰〰〰〰〰
-!ban [اسم المستخدم | ID]
-يمكنك أيضا القيام بذلك عن طريق الرد
+Ban [User Name | ID]
+You can also do this by post
 〰〰〰〰〰〰
-!unban [ID]
-يمكنك أيضا القيام بذلك عن طريق الرد
-〰〰〰〰〰
-!who
-قائمة الأعضاء
+Unban [ID]
+You can also do this by post
 〰〰〰〰〰〰
-!modlist
-قائمة المشرفين
+WHO COMPLETE
+Member List
 〰〰〰〰〰〰
-!promote [اسم المستخدم]
-تشجيع شخص
+Modlist
+List supervisors
 〰〰〰〰〰〰
-!demote [اسم المستخدم]
-تخفيض شخص
+Promote [User Name]
+Encourage people
 〰〰〰〰〰〰
-!kickme
-ستبدأ المستخدم
+Demote [User Name]
+Reducing a person
 〰〰〰〰〰〰
-!about
-وصف المجموعة
+Kickme
+The user will begin
 〰〰〰〰〰〰
-!setphoto
-مجموعة والأقفال صورة جماعية
+About
+Group description
 〰〰〰〰〰〰
-!setname [اسم]
-مجموعة اسم المجموعة
+Setphoto
+Group and locks a group photo
 〰〰〰〰〰〰
-!rules
-قواعد المجموعة
+Setname [name]
+Group Group Name
 〰〰〰〰〰〰
-!id
-العودة هوية المجموعة أو هوية المستخدم
+Rules
+Group rules
 〰〰〰〰〰〰
-!help
-هذا النص المساعدة
+Id
+Back identity of the group or the user's identity
 〰〰〰〰〰〰
-!lock [member|name|bots|leave|tag|adds]
-أقفال [عضو | الاسم | البوتات | leaveing ​​| العربية | علامة | يضيف]
+Help
+This text help
 〰〰〰〰〰〰
-!unlock [member|name|bots|leave|tag|adds]
-فتح القفل [عضو | الاسم | البوتات | leaveing ​​| العربية | علامة | يضيف]
+Lock [member | name | bots | leave | tag | adds]
+Locks [Member | Name | Bots | leaveing ​​| Arab | Sign | Adds]
 〰〰〰〰〰〰
-!set rules <النص>
-تعيين <النص> كقواعد
+Unlock [member | name | bots | leave | tag | adds]
+Unlock [Member | Name | Bots | leaveing ​​| Arab | Sign | Adds]
 〰〰〰〰〰〰
-!set about <النص>
-تعيين <النص> كما حول
+Set rules <text>
+Set <text> bases
 〰〰〰〰〰〰
-!settings
-يعود ضبط مجموعة
+Set about <text>
+Set <text> as about
 〰〰〰〰〰〰
-!newlink
-إنشاء / إلغاء ارتباط مجموعتك
+Settings Thread Tools
+Back tuning range
 〰〰〰〰〰〰
-!link
-يعود ارتباط مجموعة
+Newlink
+Create / cancel your group link
 〰〰〰〰〰〰
-!owner
-يعود مالك المجموعة معرف
+Link
+Group link back
 〰〰〰〰〰〰
-!setowner [Id]
-سيتم تعيين معرف كمالك
+Owner
+Back Group owner ID
 〰〰〰〰〰〰
-!setflood [قيمة]
-ضبط [قيمة] كما حساسية الفيضانات
+Setowner [Id]
+ID will be assigned as the owner
 〰〰〰〰〰〰
-!stats
-إحصائيات رسالة بسيطة
+Setflood [value]
+Adjust the [value] as floods sensitivity
 〰〰〰〰〰〰
-!save [value] <النص>
-حفظ <النص> كما [قيمة]
+Stats
+STATISTICS simple message
 〰〰〰〰〰〰
-!get [قيمة]
-عوائد نص [قيمة]
+Save [value] <text>
+Save <text> as [value]
 〰〰〰〰〰〰
-!clean [modlist|rules|about]
-سوف مسح [modlist | قواعد | حول] وتعيينها إلى لا شيء
+Get [value]
+Returns the text of the [value]
 〰〰〰〰〰〰
-!info [اسم المستخدم]
-نرسل لك احصائيات المستخدم
+Clean [modlist | rules | about]
+Will scan [modlist | Rules | On and set to Nothing
 〰〰〰〰〰〰
-!public [yes|no]
-السماح لمستخدم رؤية | الانضمام مجموعتك مع
-! دردشات
-في بوت الكهروضوئية
+Info [User Name]
+Send you the user stats
 〰〰〰〰〰〰
-!log
-سيعود سجلات مجموعة
+Public [yes | no]
+Allowing the user to see | Join your group with
+Chats
+Bot in PV
 〰〰〰〰〰〰
-!sticker [warn|kick|ok]
-تحذير: إرسال تحذير إذا ترسل ملصقا
-ركلة: ركلة المستخدم إذا ترسل ملصقا
-طيب: لا تفعل شيئا إذا ترسل ملصقا
+log
+Will set records
 〰〰〰〰〰〰
-!tagall [النص]
-المستخدمين العلامة && ترسل رسالتك
+Sticker [warn | kick | ok]
+Warning: If you send a warning sticker
+Kick: kick user if send sticker
+Ok: do nothing if send sticker
 〰〰〰〰〰〰
-!about us
-ارسال نحو المبدعين بوت
+Tagall [text]
+&& User mark send Inquiry
 〰〰〰〰〰〰
-persiangulf
-نرسل لك perisangulf الشعار كما ملصقا
+About us
+Send some creators Bot
 〰〰〰〰〰〰
-!all
-ترى كل شيء عن الفريق
+Persiangulf
+We send you perisangulf logo as sticker
 〰〰〰〰〰〰
-!block (مستخدم معرف)
-!unblock (مستخدم معرف)
-كتلة أو الغاء الحظر عن الاعضاء (سودو فقط)
+All
+See everything about the team
 〰〰〰〰〰〰
-!kickinactive
-ركلة المستخدمين غير نشط من المجموعة
+Block (user ID)
+Unblock (user ID)
+Block or Unblock Users (Sudo only)
 〰〰〰〰〰〰
-!calc [التعبير]
-A ببساطة آلة حاسبة
+Kickinactive
+Kick user is inactive group
 〰〰〰〰〰〰
-!qr [النص]
-إنشاء رمز الاستجابة السريعة مع [النص] النص
+Calc [expression]
+A simply calculator
 〰〰〰〰〰〰
-!webshot [رابط]
-إنشاء wabshot من [URL]
+Qr [text]
+Create QR Code with [text] text
 〰〰〰〰〰〰
-!pv [user-id] [text]
-إرسال رسائل نصية إلى مستخدم معرف (سودو فقط)
+Webshot [link]
+Create wabshot of [URL]
 〰〰〰〰〰〰
-!linkpv
-إرسال رابط لالكهروضوئية (على المحاولة الأولى التي ترسلها 10 جي اس للبوت)
+Pv [user-id] [text]
+Send text messages to the user ID (Sudo only)
 〰〰〰〰〰〰
-!banlist
-سيعود الفريق قائمة الممنوعين
+Linkpv
+Send a link to the PV (on the first attempt, which sent 10 msg the bot)
 〰〰〰〰〰〰
-!pv pg
-إرسال الكهروضوئية لك الأوامر
+Banlist
+The team will return a list of those barred
 〰〰〰〰〰〰
-!welcome [group|pm|disable]
-ضبط مرحبا بكم في مجموعة
-مجموعة مرحبا بكم في مساء (الكهروضوئية)
-تعيين موضع ترحيب تعطيل
+Pv pg
+Send PV commands you
 〰〰〰〰〰〰
-** U يمكن استخدام "/" و "!" و"."
+Welcome [group | pm | disable]
+Adjust hello to the group
+Group hello to the evening (PV)
+Set welcome disabled
 〰〰〰〰〰〰
-* فقط المالك وتعديل ويمكن أن تضيف السير في مجموعة
+** U can use the "/" and "!" and"i" and"#" and"*" and" "
 〰〰〰〰〰〰
-* يمكن فقط للمشرفين ومالك استخدام ركلة، والحظر، رفع الحظر، newlink، وصلة، setphoto، setname، وقفل، وفتح، القواعد المنصوص، تعيين حول وأوامر الضبط
+Id Channel: @TeleBumperch
 〰〰〰〰〰〰
-* يمكن فقط للمالك استخدام الدقة، setowner، وتعزيز، وتخفيض الأوامر تسجيل
+* Only the owner, modify and can add walk in groups
+〰〰〰〰〰〰
+* Only for supervisors and the owner of the use of kick, ban, lifting the ban, newlink, link, setphoto, setname, lock, unlock, the rules set, set about orders seizure
+〰〰〰〰〰〰
+* Only the owner of the use of precision, setowner, enhance, and reduce record orders
 ]],
     helpfa_text = [[
     لیست دستورات :
 
-!kick [username|id]
+kick [username|id]
 میتوانید از ریپلای هم استفاده کنید
 〰〰〰〰〰〰
-!ban [ username|id]
+ban [ username|id]
 میتوانید از ریپلای هم استفاده کنید
 〰〰〰〰〰〰
-!unban [id]
+unban [id]
 میتوانید از ریپلای هم استفاده کنید
 〰〰〰〰〰〰
-!who
+who
 لیست اعضا
 〰〰〰〰〰〰
-!modlist
+modlist
 لیست مدیران
 〰〰〰〰〰〰
-!promote [username]
+promote [username]
 مقام دادن به شخص
 میتوانید از ریپلای هم استفاده کنید
 〰〰〰〰〰〰
-!demote [username]
+demote [username]
 گرفتن مقام از شخص
 میتوانید از ریپلای هم استفاده کنید
 〰〰〰〰〰〰
-!kickme
+kickme
 لفت از گروه با قابلیت برگشت
 〰〰〰〰〰〰
-!about
+about
 توضیحات گروه
 〰〰〰〰〰〰
-!setphoto
+setphoto
 تنظیم و قفل عکس گروه
 〰〰〰〰〰〰
-!setname [name]
+setname [name]
 تنظیم اسم گروه ( بدون قفل )
 〰〰〰〰〰〰
-!rules
+rules
 قوانین
 〰〰〰〰〰〰
-!id
+id
 آیدی گروه زیاد به کار نمیاد
 〰〰〰〰〰〰
-!help
+help
 همین متن
 〰〰〰〰〰〰
-!lock [member|name|bots|leave|arabic|tag|adds] 
+lock [member|name|bots|leave|arabic|tag|adds] 
 قفل [اعضا|اسم|ربات|لفت|فارسی|تگ|تبلیغات] 
 〰〰〰〰〰〰
-!unlock [member|name|bots|leave|arabic|tag|adds]
+unlock [member|name|bots|leave|arabic|tag|adds]
 برداشتن قفل [اعضا|اسم|ربات|لفت|فارسی|تگ|تبلیغات] 
 〰〰〰〰〰〰
-!set rules <text>
+set rules <text>
 تنظیم قوانین
 〰〰〰〰〰〰
-!set about <text>
+set about <text>
 تنظیم توضیحات
 〰〰〰〰〰〰
-!settings
+settings
 تنظیمات گروه
 〰〰〰〰〰〰
-!newlink
+newlink
 ساخت / تغییر لینک
 〰〰〰〰〰〰
-!link
+link
 لینک گروه
 〰〰〰〰〰〰
-!owner
+owner
 مدیر اصلی گروه
 〰〰〰〰〰〰
-!setowner [id]
+setowner [id]
 تنظیم مدیر اصلی گروه
 〰〰〰〰〰〰
-!setflood [value]
+setflood [value]
 تنظیم مقدار حساسیت اسپم
 〰〰〰〰〰〰
-!stats
+stats
 دیدن تعداد پیام های فرستاده شده
 〰〰〰〰〰〰
-!save [value] <text>
+save [value] <text>
 تنظیم یک متن در گروه
 〰〰〰〰〰〰
-!get [value]
+get [value]
 گرفتن متن تنظیم شده
 〰〰〰〰〰〰
-!clean [modlist|rules|about]
+clean [modlist|rules|about]
 پاک کردن [لیست مدیرها | قوانین | توضیحات]
 〰〰〰〰〰〰
-!res [username]
+res [username]
 گرفتن اطلاعات یک نفر
 〰〰〰〰〰〰
-!log
+log
 لیست دستورات استفاده شده در گروه
 〰〰〰〰〰〰
-!sticker [warn|kick|ok]
+sticker [warn|kick|ok]
 warn : اخطار دادن موقع فرستادن استیکر
 kick : کیک کردن موقع فرستادن استیکر
 ok : کاری نکردن موفع فرستادن استیکر
 〰〰〰〰〰〰
-!tagall [text]
+tagall [text]
 تگ کردن همه با آیدی + پیام شما
 〰〰〰〰〰〰
-!about us
+about us
 اطلاعات درباره ربات
 〰〰〰〰〰〰
-!persiangulf
+persiangulf
 فرستادن لوگو خلیج فارس در قالب استیکر
 〰〰〰〰〰〰
-!all
+all
 دیدن همه اطلاعات گروه
 〰〰〰〰〰〰
-!block (user-id)
-!unblock (user-id)
+block (user-id)
+unblock (user-id)
 بلاک کردن شخص
 آنبلاک کردن شخص
 برای ادمین های ربات
 〰〰〰〰〰〰
-!kickinactive
+kickinactive
 کیک کردن اعضایی که فعال نیستند
 〰〰〰〰〰〰
-!calc [expression]
+calc [expression]
 ماشین حساب
 〰〰〰〰〰〰
-!qr [text]
+qr [text]
 بارکد ساز
 〰〰〰〰〰〰
-!webshot [url]
+webshot [url]
 گرفتن عکس از یک سایت
-!banlist
+banlist
 لیست بن شدگان
 〰〰〰〰〰〰
-**شما میتوانید از ! و / و . برای علامت دستورها استفاده کنید
+**شما میتوانید از ! و / و * و # و i و هیچی  برای علامت دستورها استفاده کنید
+〰〰〰〰〰〰
+ایدیه کانال: @TeleBumperch
 〰〰〰〰〰〰
 **ربات در پیوی به هیچ کس جواب نمیدهد
 ]],
     help_text = [[
 Commands list :
 
-!kick [username|id]
+kick [username|id]
 You can also do it by reply
 〰〰〰〰〰〰
-!ban [ username|id]
+ban [ username|id]
 You can also do it by reply
 〰〰〰〰〰〰
-!unban [id]
+unban [id]
 You can also do it by reply
 〰〰〰〰〰〰
-!who
+who
 Members list
 〰〰〰〰〰〰
-!modlist
+modlist
 Moderators list
 〰〰〰〰〰〰
-!promote [username]
+promote [username]
 Promote someone
 〰〰〰〰〰〰
-!demote [username]
+demote [username]
 Demote someone
 〰〰〰〰〰〰
-!kickme
+kickme
 Will kick user
 〰〰〰〰〰〰
-!about
+about
 Group description
 〰〰〰〰〰〰
-!setphoto
+setphoto
 Set and locks group photo
 〰〰〰〰〰〰
-!setname [name]
+setname [name]
 Set group name
 〰〰〰〰〰〰
-!rules
+rules
 Group rules
 〰〰〰〰〰〰
-!id
+id
 return group id or user id
 〰〰〰〰〰〰
-!help
+help
 This help text
 〰〰〰〰〰〰
-!lock [member|name|bots|leave|arabic|tag|adds]	
+lock [member|name|bots|leave|arabic|tag|adds]	
 Locks [member|name|bots|leaveing|arabic|tag|adds] 
 〰〰〰〰〰〰
-!unlock [member|name|bots|leave|arabic|tag|adds]
+unlock [member|name|bots|leave|arabic|tag|adds]
 Unlocks [member|name|bots|leaving|arabic|tag|adds]
 〰〰〰〰〰〰
-!set rules <text>
+set rules <text>
 Set <text> as rules
 〰〰〰〰〰〰
-!set about <text>
+set about <text>
 Set <text> as about
 〰〰〰〰〰〰
-!settings
+settings
 Returns group settings
 〰〰〰〰〰〰
-!newlink
+newlink
 create/revoke your group link
 〰〰〰〰〰〰
-!link
+link
 returns group link
 〰〰〰〰〰〰
-!owner
+owner
 returns group owner id
 〰〰〰〰〰〰
-!setowner [id]
+setowner [id]
 Will set id as owner
 〰〰〰〰〰〰
-!setflood [value]
+setflood [value]
 Set [value] as flood sensitivity
 〰〰〰〰〰〰
-!stats
+stats
 Simple message statistics
 〰〰〰〰〰〰
-!save [value] <text>
+save [value] <text>
 Save <text> as [value]
 〰〰〰〰〰〰
-!get [value]
+get [value]
 Returns text of [value]
 〰〰〰〰〰〰
-!clean [modlist|rules|about]
+clean [modlist|rules|about]
 Will clear [modlist|rules|about] and set it to nil
 〰〰〰〰〰〰
-!info [username]
+info [username]
 send you a user stats
 〰〰〰〰〰〰
-!public [yes|no]
+public [yes|no]
 allow to user see|join your group with
-!chats
+chats
 in bot pv
 〰〰〰〰〰〰
-!log
+log
 will return group logs
 〰〰〰〰〰〰
-!sticker [warn|kick|ok]
+sticker [warn|kick|ok]
 warn : send warning if send sticker
 kick : kick user if send sticker
 ok : do nothing if send sticker
 〰〰〰〰〰〰
-!tagall [text]
+tagall [text]
 tag users && send your message
 〰〰〰〰〰〰
-!about us
+about us
 send about bot creators
 〰〰〰〰〰〰
 persiangulf
 send you perisangulf logo as sticker
 〰〰〰〰〰〰
-!all
+all
 see all about group
 〰〰〰〰〰〰
-!block (user-id)
-!unblock (user-id)
+block (user-id)
+unblock (user-id)
 block or unblock users (sudo only)
 〰〰〰〰〰〰
-!kickinactive
+kickinactive
 kick inactive users from Group
 〰〰〰〰〰〰
-!calc [expression]
+calc [expression]
 A simply calculator
 〰〰〰〰〰〰
-!qr [text]
+qr [text]
 create qr code with [text] text
 〰〰〰〰〰〰
-!webshot [url]
+webshot [url]
 create a wabshot from [url]
 〰〰〰〰〰〰
-!pv [user-id] [text]
+pv [user-id] [text]
 send text to user-id (sudo only)
 〰〰〰〰〰〰
-!linkpv
+linkpv
 send link to your pv (for first try you send 10 msg to bot)
 〰〰〰〰〰〰
-!banlist
+banlist
 will return group ban list
 〰〰〰〰〰〰
-!pv pg
+pv pg
 send pv you commands
 〰〰〰〰〰〰
-!welcome [group|pm|disable]
+welcome [group|pm|disable]
 set welcome to group
 set welcome to pm (pv)
 set welcome disable
 〰〰〰〰〰〰
-**U can use "/" and "!"  and "."
+** U can use the "/" and "!" and"i" and"#" and"*" and" "
 〰〰〰〰〰〰
 *Only owner and mods can add bots in group
+〰〰〰〰〰〰
+Id Channel: @TeleBumperch
 〰〰〰〰〰〰
 *Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
 〰〰〰〰〰〰
