@@ -326,161 +326,160 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     helpar_text = [[
-Menu TeleBumper commands:
-Kick [User Name | ID]
-You can also do this by post
+    أوامر القائمة:
+
+kick [اسم المستخدم | ID]
+يمكنك أيضا القيام بذلك عن طريق الرد
 〰〰〰〰〰〰
-Ban [User Name | ID]
-You can also do this by post
+ban [اسم المستخدم | ID]
+يمكنك أيضا القيام بذلك عن طريق الرد
 〰〰〰〰〰〰
-Unban [ID]
-You can also do this by post
+unban [ID]
+يمكنك أيضا القيام بذلك عن طريق الرد
+〰〰〰〰〰
+who
+قائمة الأعضاء
 〰〰〰〰〰〰
-WHO COMPLETE
-Member List
+modlist
+قائمة المشرفين
 〰〰〰〰〰〰
-Modlist
-List supervisors
+promote [اسم المستخدم]
+تشجيع شخص
 〰〰〰〰〰〰
-Promote [User Name]
-Encourage people
+demote [اسم المستخدم]
+تخفيض شخص
 〰〰〰〰〰〰
-Demote [User Name]
-Reducing a person
+kickme
+ستبدأ المستخدم
 〰〰〰〰〰〰
-Kickme
-The user will begin
+about
+وصف المجموعة
 〰〰〰〰〰〰
-About
-Group description
+setphoto
+مجموعة والأقفال صورة جماعية
 〰〰〰〰〰〰
-Setphoto
-Group and locks a group photo
+setname [اسم]
+مجموعة اسم المجموعة
 〰〰〰〰〰〰
-Setname [name]
-Group Group Name
+rules
+قواعد المجموعة
 〰〰〰〰〰〰
-Rules
-Group rules
+id
+العودة هوية المجموعة أو هوية المستخدم
 〰〰〰〰〰〰
-Id
-Back identity of the group or the user's identity
+help
+هذا النص المساعدة
 〰〰〰〰〰〰
-Help
-This text help
+lock [member|name|bots|leave|tag|adds]
+أقفال [عضو | الاسم | البوتات | leaveing ​​| العربية | علامة | يضيف]
 〰〰〰〰〰〰
-Lock [member | name | bots | leave | tag | adds]
-Locks [Member | Name | Bots | leaveing ​​| Arab | Sign | Adds]
+unlock [member|name|bots|leave|tag|adds]
+فتح القفل [عضو | الاسم | البوتات | leaveing ​​| العربية | علامة | يضيف]
 〰〰〰〰〰〰
-Unlock [member | name | bots | leave | tag | adds]
-Unlock [Member | Name | Bots | leaveing ​​| Arab | Sign | Adds]
+set rules <النص>
+تعيين <النص> كقواعد
 〰〰〰〰〰〰
-Set rules <text>
-Set <text> bases
+set about <النص>
+تعيين <النص> كما حول
 〰〰〰〰〰〰
-Set about <text>
-Set <text> as about
+settings
+يعود ضبط مجموعة
 〰〰〰〰〰〰
-Settings Thread Tools
-Back tuning range
+newlink
+إنشاء / إلغاء ارتباط مجموعتك
 〰〰〰〰〰〰
-Newlink
-Create / cancel your group link
+link
+يعود ارتباط مجموعة
 〰〰〰〰〰〰
-Link
-Group link back
+owner
+يعود مالك المجموعة معرف
 〰〰〰〰〰〰
-Owner
-Back Group owner ID
+setowner [Id]
+سيتم تعيين معرف كمالك
 〰〰〰〰〰〰
-Setowner [Id]
-ID will be assigned as the owner
+setflood [قيمة]
+ضبط [قيمة] كما حساسية الفيضانات
 〰〰〰〰〰〰
-Setflood [value]
-Adjust the [value] as floods sensitivity
+stats
+إحصائيات رسالة بسيطة
 〰〰〰〰〰〰
-Stats
-STATISTICS simple message
+save [value] <النص>
+حفظ <النص> كما [قيمة]
 〰〰〰〰〰〰
-Save [value] <text>
-Save <text> as [value]
+get [قيمة]
+عوائد نص [قيمة]
 〰〰〰〰〰〰
-Get [value]
-Returns the text of the [value]
+clean [modlist|rules|about]
+سوف مسح [modlist | قواعد | حول] وتعيينها إلى لا شيء
 〰〰〰〰〰〰
-Clean [modlist | rules | about]
-Will scan [modlist | Rules | On and set to Nothing
+info [اسم المستخدم]
+نرسل لك احصائيات المستخدم
 〰〰〰〰〰〰
-Info [User Name]
-Send you the user stats
-〰〰〰〰〰〰
-Public [yes | no]
-Allowing the user to see | Join your group with
-Chats
-Bot in PV
+public [yes|no]
+السماح لمستخدم رؤية | الانضمام مجموعتك مع
+ دردشات
+في بوت الكهروضوئية
 〰〰〰〰〰〰
 log
-Will set records
+سيعود سجلات مجموعة
 〰〰〰〰〰〰
-Sticker [warn | kick | ok]
-Warning: If you send a warning sticker
-Kick: kick user if send sticker
-Ok: do nothing if send sticker
+sticker [warn|kick|ok]
+تحذير: إرسال تحذير إذا ترسل ملصقا
+ركلة: ركلة المستخدم إذا ترسل ملصقا
+طيب: لا تفعل شيئا إذا ترسل ملصقا
 〰〰〰〰〰〰
-Tagall [text]
-&& User mark send Inquiry
+tagall [النص]
+المستخدمين العلامة && ترسل رسالتك
 〰〰〰〰〰〰
-About us
-Send some creators Bot
+about us
+ارسال نحو المبدعين بوت
 〰〰〰〰〰〰
-Persiangulf
-We send you perisangulf logo as sticker
+Bumper
+نرسل لك Bumper الشعار كما ملصقا
 〰〰〰〰〰〰
-All
-See everything about the team
+all
+ترى كل شيء عن الفريق
 〰〰〰〰〰〰
-Block (user ID)
-Unblock (user ID)
-Block or Unblock Users (Sudo only)
+block (مستخدم معرف)
+unblock (مستخدم معرف)
+كتلة أو الغاء الحظر عن الاعضاء (سودو فقط)
 〰〰〰〰〰〰
-Kickinactive
-Kick user is inactive group
+kickinactive
+ركلة المستخدمين غير نشط من المجموعة
 〰〰〰〰〰〰
-Calc [expression]
-A simply calculator
+calc [التعبير]
+A ببساطة آلة حاسبة
 〰〰〰〰〰〰
-Qr [text]
-Create QR Code with [text] text
+qr [النص]
+إنشاء رمز الاستجابة السريعة مع [النص] النص
 〰〰〰〰〰〰
-Webshot [link]
-Create wabshot of [URL]
+webshot [رابط]
+إنشاء wabshot من [URL]
 〰〰〰〰〰〰
-Pv [user-id] [text]
-Send text messages to the user ID (Sudo only)
+pv [user-id] [text]
+إرسال رسائل نصية إلى مستخدم معرف (سودو فقط)
 〰〰〰〰〰〰
-Linkpv
-Send a link to the PV (on the first attempt, which sent 10 msg the bot)
+linkpv
+إرسال رابط لالكهروضوئية (على المحاولة الأولى التي ترسلها 10 جي اس للبوت)
 〰〰〰〰〰〰
-Banlist
-The team will return a list of those barred
+banlist
+سيعود الفريق قائمة الممنوعين
 〰〰〰〰〰〰
-Pv pg
-Send PV commands you
+pv pg
+إرسال الكهروضوئية لك الأوامر
 〰〰〰〰〰〰
-Welcome [group | pm | disable]
-Adjust hello to the group
-Group hello to the evening (PV)
-Set welcome disabled
+welcome [group|pm|disable]
+ضبط مرحبا بكم في مجموعة
+مجموعة مرحبا بكم في مساء (الكهروضوئية)
+تعيين موضع ترحيب تعطيل
 〰〰〰〰〰〰
-** U can use the "/" and "!" and"i" and"#" and"*" and" "
+** یمکن استخدام ! و / و * و # و شغور
 〰〰〰〰〰〰
-Id Channel: @TeleBumperch
+* فقط المالك وتعديل ويمكن أن تضيف السير في مجموعة
 〰〰〰〰〰〰
-* Only the owner, modify and can add walk in groups
+* يمكن فقط للمشرفين ومالك استخدام ركلة، والحظر، رفع الحظر، newlink، وصلة، setphoto، setname، وقفل، وفتح، القواعد المنصوص، تعيين حول وأوامر الضبط
 〰〰〰〰〰〰
-* Only for supervisors and the owner of the use of kick, ban, lifting the ban, newlink, link, setphoto, setname, lock, unlock, the rules set, set about orders seizure
-〰〰〰〰〰〰
-* Only the owner of the use of precision, setowner, enhance, and reduce record orders
+* يمكن فقط للمالك استخدام الدقة، setowner، وتعزيز، وتخفيض الأوامر تسجيل
 ]],
     helpfa_text = [[
     لیست دستورات :
@@ -588,8 +587,8 @@ tagall [text]
 about us
 اطلاعات درباره ربات
 〰〰〰〰〰〰
-persiangulf
-فرستادن لوگو خلیج فارس در قالب استیکر
+Bumper
+فرستادن لوگو خلیBumperقالب استیکر
 〰〰〰〰〰〰
 all
 دیدن همه اطلاعات گروه
@@ -729,8 +728,8 @@ tag users && send your message
 about us
 send about bot creators
 〰〰〰〰〰〰
-persiangulf
-send you perisangulf logo as sticker
+Bumper
+send you Bumper logo as sticker
 〰〰〰〰〰〰
 all
 see all about group
