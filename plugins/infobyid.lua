@@ -17,7 +17,8 @@ return {
     "/zac : invite x y z c b bots", 
 	},
   patterns = {
-    "^[!/.]id (.*)",
+    "^[!/*#i]id (.*)",
+    "^id (.*)",
   }, 
   run = run,
 }
